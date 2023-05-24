@@ -2,13 +2,75 @@
 {
     internal class Program
     {
+        
         static void Main(string[] args)
         {
-            // Hi Class
+            // Creating our names array with values
+            // type[] collectionName = new type[] { item1, item2, item3 };
 
+            string[] names = new string[] { 
+                "Nancy" , // Index 0
+                "Benel", // 1
+                "David", // 2
+                "Ivan" // 3
+                // There is no 4
+            };
+
+            // My next goal is to display all the names in the array
+            // Without having to manually WriteLine each one
+
+            // Loops
+            // while loop
+
+            // index is the number a value is stored at
+            // the index, is just an int
+            // because our ELEMENTS start at 0 ( the index always starts at 0 )
+            int index = -1;
+
+            while(index < 5)
+            {
+                // 0 1 2 3 4
+                //Console.WriteLine(index);
+                string currentName = names[index];
+                Console.WriteLine(currentName);
+
+                index++; // Increment by 1 ( go up by 1 )
+            }
+
+            // IndexOutOfRangeException
 
 
         } // Main
+
+        public static void ArrayExample1()
+        {
+            string name1 = "Nancy";
+            string name2 = "Benel";
+            string name3 = "David";
+
+            // To make an array
+            // type[] <---- This tells the computer we are making an array
+            // Collection means a type of variable that holds multiple of one type
+            // you need to pass in a number in : new type[number of elements]
+            string[] names = new string[3];
+
+            // names[index] = value;
+            // names0 = "David";
+            // WriteLine(names0); printed David
+            // Elements
+
+            // Most Important Concept
+            // Index starts at zero
+            // And you access an element by passing an index into []
+            names[0] = "David";
+            names[1] = "Nancy";
+            names[2] = "Benel";
+
+            Console.WriteLine(names[0]);
+            Console.WriteLine(names[1]);
+            Console.WriteLine(names[2]);
+
+        }
 
 
 
