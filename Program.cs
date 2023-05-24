@@ -12,8 +12,8 @@
                 "Nancy" , // Index 0
                 "Benel", // 1
                 "David", // 2
-                "Ivan" // 3
-                // There is no 4
+                "Ivan" ,// 3
+                "Ednalynn" // 4
             };
 
             // My next goal is to display all the names in the array
@@ -25,14 +25,16 @@
             // index is the number a value is stored at
             // the index, is just an int
             // because our ELEMENTS start at 0 ( the index always starts at 0 )
-            int index = -1;
+            int index = 0;
+            
+            // collectionName.Length <---- Gets you the number of elements in the array
 
-            while(index < 5)
+            while(index < names.Length)
             {
                 // 0 1 2 3 4
                 //Console.WriteLine(index);
                 string currentName = names[index];
-                Console.WriteLine(currentName);
+                Console.WriteLine($"{index} : {currentName}");
 
                 index++; // Increment by 1 ( go up by 1 )
             }
