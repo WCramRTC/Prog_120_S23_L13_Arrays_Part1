@@ -5,15 +5,49 @@
         
         static void Main(string[] args)
         {
+  
+
+
+        } // Main
+
+        public static void DefaultValueExample()
+        {
+            bool[] whatAreTheValues = new bool[5];
+
+            // Primitive data types
+            // default value
+            // string - ""
+            // int - 0
+            // double - 0.0
+            // bool - false
+
+            // Use loops to assign values
+            // Use loops to ask for 3 different numbers, and do math with the numbers
+
+            int index = 0;
+
+            while (index < whatAreTheValues.Length)
+            {
+                bool value = whatAreTheValues[index];
+                Console.WriteLine($"{index} : {value}");
+
+                index++;
+            }
+
+        }
+
+        public static void LoopingThruAnArrayExample()
+        {
             // Creating our names array with values
             // type[] collectionName = new type[] { item1, item2, item3 };
 
-            string[] names = new string[] { 
+            string[] names = new string[] {  // 5 Elements
                 "Nancy" , // Index 0
                 "Benel", // 1
                 "David", // 2
                 "Ivan" ,// 3
-                "Ednalynn" // 4
+                "Ednalynn", // 4
+                "Josh"// 5
             };
 
             // My next goal is to display all the names in the array
@@ -26,10 +60,11 @@
             // the index, is just an int
             // because our ELEMENTS start at 0 ( the index always starts at 0 )
             int index = 0;
-            
-            // collectionName.Length <---- Gets you the number of elements in the array
 
-            while(index < names.Length)
+            // collectionName.Length <---- Gets you the number of elements in the array
+            Console.WriteLine(names.Length);
+
+            while (index < names.Length)
             {
                 // 0 1 2 3 4
                 //Console.WriteLine(index);
@@ -41,8 +76,7 @@
 
             // IndexOutOfRangeException
 
-
-        } // Main
+        }
 
         public static void ArrayExample1()
         {
