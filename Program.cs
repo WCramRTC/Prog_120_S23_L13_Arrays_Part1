@@ -5,7 +5,47 @@
         
         static void Main(string[] args)
         {
-  
+
+            // Ask the user for a "capacity"
+            Console.Write("Enter a capacity: ");
+            string userInput = Console.ReadLine();
+            int capacity = int.Parse(userInput);
+
+
+            // I want to create a double array called numbers
+            double[] numbers = new double[capacity];
+
+            Console.WriteLine("The size of your array is " + numbers.Length);
+            // The last element will always be a .Length - 1
+
+            // string, int, double, bool
+
+            int index = 0;
+
+            while(index < numbers.Length)
+            {
+
+                numbers[index] = (index + 1) * 3;
+
+                double value = numbers[index];
+                Console.WriteLine($"{index} : {value}");
+
+                index++;
+            }
+
+            // Add the first element and the last element together, display the result
+            double first = numbers[0]; // First element is always at index 0
+            double last = numbers[numbers.Length - 1]; // Last is always at name.Length - 1
+
+            double sum = first + last;
+
+            Console.WriteLine(sum);
+
+            // I want to fill the array with numbers
+            // Then multiply all the numbers by 2
+            // Print the result
+
+
 
 
         } // Main
